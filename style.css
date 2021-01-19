@@ -1,5 +1,7 @@
-#logo-noé {
-    /* padding-left: 15px; */
+
+/* -----------------------------------HEADER----------------------------------------------- */
+
+.logo-noé {
     height: 70px;
 }
 
@@ -8,7 +10,6 @@
     height: 22px;
     /* width: 100%; */
 }
-
 
 .nav-link {
     font-family: 'Sniglet', cursive;
@@ -56,108 +57,76 @@
     color: white !important;
 }
 
-/* -------------------------------------------------------------------- */
-.title-block {
-    text-align: center;
+/* ---------------------------------------------ACCUEIL-------------------------------------*/
+
+.block-text-actu {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #015f4842;
+    color: white;
+}
+
+h4 {
     font-family: 'Sniglet', cursive;
+    font-weight: bold;
+    color: #015f4891;
 }
 
-.container-responsive-impair {
-    background-color: #e07a044b;
+.accueil-presentation {
+    padding: 10px;
+    width: 75%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.336);
+    border-radius: 20px 0px 20px 0px;
 }
 
-.container-responsive-pair {
-    background-color:rgba(211, 211, 211, 0.466);
+#accueil-citation {
+    font-size: 20px;
+    font-style: italic;
 }
+
+
+p {
+    font-size: 14px; 
+}
+
+.block-actu2 {
+    margin: 20px 0px 20px 0;
+}
+
+.block-actu1,
+.block-actu2,
+.block-actu3 {
+    position: relative;
+    height: 100%;
+}
+
+.div-actu  img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------------------------------------MEDIA QUERIES-------------------------------------*/
 
 @media screen and (max-width: 768px)
 {
 
-    .navbar-brand {
-        height: 60px;
-    }
+   
 
-    .title-block {
-        font-size: 18px;
-        margin-top: 10px;
-    }
-
-    .text-block {
-        font-size: 14px;
-    }
-    
-    .img1-accueil-responsive,
-    .img2-accueil-responsive,
-    .img3-accueil-responsive {
-        width: 150px;
-        height: 150px;
-    }
-
-    .img1-accueil-responsive,
-    .img3-accueil-responsive {
-        float: left;
-        margin-right: 10px;
-    }
-
-    .img2-accueil-responsive {
-        float: right;
-        margin-left: 10px;
-    }
-
-    .container-text-responsive > p {
-        padding: 0 10px 0 10px;
-    }
 }
 
 @media screen and (min-width: 768px) {
 
-    .title-block {
-        font-size: 24px;
+    .block-actu1 {
+        margin-right: 10px;
     }
 
-    .text-block {
-        font-size: 16px;
+    .block-actu2 {
+        margin: 0;
     }
-
-    .img1-accueil-responsive,
-    .img2-accueil-responsive,
-    .img3-accueil-responsive {
-        width: 300px;
-        height: 300px;
-        position: absolute;
+    .block-actu3 {
+        margin-top: 10px;
     }
-
-    .img1-accueil-responsive,
-    .img3-accueil-responsive {
-        left: -150px;
-    }
-
-    .img2-accueil-responsive {
-        right: -150px;
-    }
-
-    .container-responsive-impair,
-    .container-responsive-pair {
-        display: flex;
-        align-items: center;
-        position: relative;
-    }
-
-    .container-responsive-pair {
-        margin-right: 150px;
-        padding-right: 150px;
-    }
-
-    .container-responsive-impair {
-        margin-left: 150px;
-        padding-left: 150px;
-    }
-
-    .container-text-responsive {
-        margin: 40px 0 40px 0;
-    }
-
-    .container-text-responsive > p {
-        padding: 0 30px 0 30px;
-    }
+ }
 }
