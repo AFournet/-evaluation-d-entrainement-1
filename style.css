@@ -3,6 +3,12 @@ html,body {
 }
 
 
+@media screen and (max-width: 768px) { 
+    .container-lg {
+        padding: 0 !important;
+    }
+}
+
 
 /* ---------------------------HEADER---------------------------------- */
 
@@ -16,14 +22,14 @@ html,body {
     /* width: 100%; */
 }
 
-.nav-link {
+.menu-header .nav-link {
     font-family: 'Sniglet', cursive;
 }
 
 
 /* #252679 */
 /* #64156 */
-.nav-link {
+.menu-header .nav-link {
     color: #5f1b74 !important;
 }
 
@@ -41,7 +47,7 @@ html,body {
 }
 
 
-.nav-link:hover {
+.menu-header .nav-link:hover {
     background-color: #5f1b74  !important;
     color: white !important;
 }
@@ -62,6 +68,21 @@ html,body {
     color: white !important;
 }
 
+@media screen and (max-width: 768px) { 
+    .menu-header .navbar {
+        position: fixed !important;
+        width: 100%;
+        margin-bottom: 70px !important;
+        z-index: 2;
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    .menu-header .navbar {
+        height: 50px;
+    }
+}
+
 /* ----------------------------------ACCUEIL----------------------------*/
 
 .accueil {
@@ -70,7 +91,6 @@ html,body {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    width: 100vw;
 }
 
 .block-text-accueil {
@@ -84,6 +104,27 @@ html,body {
 #accueil-citation {
     font-size: 20px;
     font-style: italic;
+}
+
+@media screen and (max-width: 768px) { 
+    .block-actu1,
+    .block-actu2,
+    .block-actu3 { 
+        width: 100%; 
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    .block-actu1 {
+        margin-right: 10px;
+    }
+
+    .block-actu2 {
+        margin: 0;
+    }
+    .block-actu3 {
+        margin-top: 10px;
+    }
 }
 
 /* ----------------------------------ACTUS----------------------------*/
@@ -126,44 +167,15 @@ p {
     height: 100%;
 }
 
-/* ---------------------------MEDIA QUERIES-----------------------------*/
-
-
-@media screen and (max-width: 768px)
-{
-
+@media screen and (max-width: 768px) { 
     .block-actu1,
     .block-actu2,
     .block-actu3 { 
         width: 100%; 
     }
-
-    .retour-haut {
-        position: fixed;
-        z-index: 2;
-        bottom: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.582) !important;
-    }
-
-    .navbar {
-        position: fixed !important;
-        width: inherit;
-        margin-bottom: 70px !important;
-    }
-
-    .container-lg {
-        padding: 0 !important;
-    }
-
 }
 
-@media screen and (min-width: 768px) {
-
-    .navbar {
-        height: 50px;
-    }
-
+@media screen and (min-width: 768px) { 
     .block-actu1 {
         margin-right: 10px;
     }
@@ -175,4 +187,64 @@ p {
         margin-top: 10px;
     }
 }
+/* ----------------------------------MISSIONS---------------------------*/
 
+.events {
+    background-color: #66666613;
+}
+
+.card {
+    max-width: 310px;
+}
+
+.card-title {
+    font-size: 16px !important;
+    font-weight: bolder;
+}
+
+.card-text {
+    font-size: 14px;  
+}
+
+
+@media screen and (max-width: 578px) {
+    .card-body {
+        padding: 10px !important;
+    }
+    .card-title {
+        font-size: 14px !important;
+    }
+    
+    .missions .btn {
+        font-size: 10px;
+    }
+}
+
+/* ---------------------------FOOTER-----------------------------*/
+
+.menu-footer a {
+    padding: 0 15px 0 15px !important;
+    font-size: 12px;
+    border-right: 1px solid lightgray;
+}
+/* ---------------------------MEDIA QUERIES-----------------------------*/
+
+
+@media screen and (max-width: 768px)
+{  
+    .retour-haut {
+        position: fixed;
+        z-index: 2;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.582) !important;
+    }
+}
+
+
+
+@media screen and (min-width: 700px) {
+    .btn-sub button {
+        padding: 30px 0 30px 0;
+    }
+}
