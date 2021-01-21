@@ -96,34 +96,33 @@ html,body {
 .block-text-accueil {
     padding: 10px;
     width: 75%;
+    max-width: 400px;
     color: white;
     background-color: rgba(0, 0, 0, 0.336);
     border-radius: 20px 0px 20px 0px;
 }
 
-#accueil-citation {
-    font-size: 20px;
-    font-style: italic;
-}
+
 
 @media screen and (max-width: 768px) { 
-    .block-actu1,
-    .block-actu2,
-    .block-actu3 { 
-        width: 100%; 
+    #accueil-citation {
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    #citation-author {
+        font-size: 13px;
     }
 }
 
 @media screen and (min-width: 768px) { 
-    .block-actu1 {
-        margin-right: 10px;
+    #accueil-citation {
+        font-size: 25px;
+        font-style: italic;
     }
 
-    .block-actu2 {
-        margin: 0;
-    }
-    .block-actu3 {
-        margin-top: 10px;
+    #citation-author {
+        font-size: 16px;
     }
 }
 
@@ -187,31 +186,29 @@ p {
         margin-top: 10px;
     }
 }
+
 /* ----------------------------------MISSIONS---------------------------*/
 
-.events {
-    background-color: #66666613;
-}
-
-.card {
+.missions .card {
     max-width: 310px;
 }
 
-.card-title {
+.missions .card-title {
     font-size: 16px !important;
     font-weight: bolder;
 }
 
-.card-text {
+.missions .card-text {
     font-size: 14px;  
 }
 
 
+
 @media screen and (max-width: 578px) {
-    .card-body {
+    .missions .card-body {
         padding: 10px !important;
     }
-    .card-title {
+    .missions .card-title {
         font-size: 14px !important;
     }
     
@@ -220,6 +217,28 @@ p {
     }
 }
 
+/* ----------------------------------EVENTS---------------------------*/
+
+.events {
+    background-color: #66666613;
+}
+
+.events a {
+    text-decoration: none;
+    color: white;
+}
+
+.events a:hover {
+    text-decoration: none;
+    color: lightgray;
+}
+
+@media screen and (max-width: 578px) {
+    
+    .events .card-title {
+        font-size: 18px !important;
+    }
+}
 /* ---------------------------FOOTER-----------------------------*/
 
 .menu-footer a {
@@ -227,6 +246,7 @@ p {
     font-size: 12px;
     border-right: 1px solid lightgray;
 }
+
 /* ---------------------------MEDIA QUERIES-----------------------------*/
 
 
@@ -240,7 +260,6 @@ p {
         background-color: rgba(0, 0, 0, 0.582) !important;
     }
 }
-
 
 
 @media screen and (min-width: 700px) {
