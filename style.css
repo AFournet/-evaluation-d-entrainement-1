@@ -2,6 +2,13 @@ html,body {
     margin: 0;
 }
 
+section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Sniglet', cursive;
+    font-weight: bold;
+    color: #015f4891;
+}
 
 @media screen and (max-width: 768px) { 
     .container-lg {
@@ -105,7 +112,7 @@ html,body {
 
 
 @media screen and (max-width: 768px) { 
-    #accueil-citation {
+    .block-text-accueil h1 {
         font-size: 20px;
         font-style: italic;
     }
@@ -116,8 +123,8 @@ html,body {
 }
 
 @media screen and (min-width: 768px) { 
-    #accueil-citation {
-        font-size: 25px;
+    .block-text-accueil h1 {
+        font-size: 24px;
         font-style: italic;
     }
 
@@ -140,13 +147,8 @@ html,body {
     color: white;
 }
 
-h4 {
-    font-family: 'Sniglet', cursive;
-    font-weight: bold;
-    color: #015f4891;
-}
 
-p {
+.block-text-actu p {
     font-size: 14px; 
 }
 
@@ -194,7 +196,7 @@ p {
 }
 
 .missions .card-title {
-    font-size: 16px !important;
+    font-size: 16px;
     font-weight: bolder;
 }
 
@@ -209,7 +211,7 @@ p {
         padding: 10px !important;
     }
     .missions .card-title {
-        font-size: 14px !important;
+        font-size: 14px;
     }
     
     .missions .btn {
@@ -221,6 +223,10 @@ p {
 
 .events {
     background-color: #66666613;
+}
+
+.events .card-title {
+    font-size: 20px;
 }
 
 .events a {
@@ -236,7 +242,7 @@ p {
 @media screen and (max-width: 578px) {
     
     .events .card-title {
-        font-size: 18px !important;
+        font-size: 18px;
     }
 }
 /* ---------------------------FOOTER-----------------------------*/
